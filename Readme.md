@@ -54,7 +54,7 @@ __Usage:__
 	```
 	mkdir src 
     cd src
-    git clone https://github.com/SandraK82/deploy-ns-local-raspi.git
+    git clone https://github.com/archynet/deploy-ns-local-raspi.git
 	cd deploy-ns-local-raspi
 	```
 	You can then use 
