@@ -124,20 +124,20 @@ if [ "$CPU_MODEL" = "ARMv6-compatible" ]
 then
   echo "ARMv6 detected"
   # install node (on ARMv6 eg. Raspberry Model A/B/B+/A+/Zero)
-  wget https://nodejs.org/dist/v6.7.0/node-v6.7.0-linux-armv6l.tar.xz
-  tar -xvf node-v6.7.0-linux-armv6l.tar.xz
-  cd node-v6.7.0-linux-armv6l
+  wget https://nodejs.org/dist/latest/node-v17.1.0-linux-armv7l.tar.xz
+  tar -xvf node-v17.1.0-linux-armv7l.tar.xz
+  cd node-v17.1.0-linux-armv7l
   sudo cp -R * /usr/local/
   # check version should be v6.7.0
   node -v
   cd ..
   # clean up
-  rm node-v6.7.0-linux-armv6l.tar.xz
-  rm -r node-v6.7.0-linux-armv6l
+  rm node-v17.1.0-linux-armv7l.tar.xz
+  rm -r node-v17.1.0-linux-armv7l
 else
   echo "Assuming ARMv8 (Raspi 3))"
   # install node (on ARMv8 eg Raspberry 3 Model B)
-  curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+  curl -sL https://deb.nodesource.com/setup_17.x | sudo -E bash -
   sudo apt-get install -y nodejs
 fi
 
